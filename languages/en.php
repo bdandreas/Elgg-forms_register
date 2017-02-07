@@ -38,7 +38,10 @@ return [
 	'settings:forms:register:header' => 'Intro text',
 	'settings:forms:register:header:help' => 'Text to add above the registration form (flush the caches for changes to take effect)',
 
-	'settings:forms:register:footer' => 'Footer text',
+    'settings:forms:register:header_enabled' => 'Enable Intro text',
+    'settings:forms:register:header_enabled:help' => '',
+
+    'settings:forms:register:footer' => 'Footer text',
 	'settings:forms:register:footer:help' => 'Text to add below the registration form (flush the caches for changes to take effect)',
 
 	'forms:register:header' => elgg_get_plugin_setting('header', 'forms_register', ''),

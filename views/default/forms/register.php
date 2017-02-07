@@ -8,10 +8,10 @@ if (elgg_is_sticky_form('register')) {
 }
 
 $header = elgg_echo('forms:register:header');
-if ($header) {
-	echo elgg_format_element('div', [
-		'class' => 'elgg-form-register-header',
-			], $header);
+if (elgg_get_plugin_setting('header_enabled', 'forms_register', false)) {
+    echo elgg_format_element('div', [
+        'class' => 'elgg-form-register-header',
+    ], $header);
 }
 
 if (elgg_get_plugin_setting('first_last_name', 'forms_register', false)) {
